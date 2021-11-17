@@ -1,2 +1,2 @@
-# reactjs-async-localstorage
+## reactjs-async-localstorage
 Asynchronous usage for Window.localStorage.
