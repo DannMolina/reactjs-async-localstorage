@@ -1,6 +1,6 @@
 {
   "name": "reactjs-async-localstorage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Asynchronous usage for Window.localStorage.",
   "main": "index.js",
   "scripts": {
