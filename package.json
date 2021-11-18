@@ -1,0 +1,27 @@
+{
+  "name": "reactjs-async-localstorage",
+  "version": "1.0.0",
+  "description": "Asynchronous usage for Window.localStorage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DannMolina/reactjs-async-localstorage.git"
+  },
+  "keywords": [
+    "reactjs",
+    "asyncstorage",
+    "async",
+    "window.localstorage",
+    "asynchronous",
+    "localstorage"
+  ],
+  "author": "Dann Russell Molina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DannMolina/reactjs-async-localstorage/issues"
+  },
+  "homepage": "https://github.com/DannMolina/reactjs-async-localstorage#readme"
+}
