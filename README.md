@@ -34,11 +34,11 @@ const App = () => {
   );
 
   const saveData = async () => {
-    await useStorage.setItem('sample_data_in_local_storage', 'Sample Data');
+    await AsyncStorage.setItem('sample_data_in_local_storage', 'Sample Data');
   };
 
   const retrieveData = async () => {
-    const localData = await useStorage.getItem('sample_data_in_local_storage');
+    const localData = await AsyncStorage.getItem('sample_data_in_local_storage');
     setTimeout(() => {
       setSampleData(localData);
     }, 2000);
