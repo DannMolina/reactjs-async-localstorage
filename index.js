@@ -2,8 +2,13 @@
  * Asynchronous local storage
  */
 
+// *
 const AsyncStorage = {
-  // *
+  /**
+   * @param {key} key
+   * @param {value} value
+   * @save accesses the current domain's local Storage object and adds a data item
+   */
   setItem: async (key, value, fn = null) => {
     try {
       // *
@@ -17,36 +22,39 @@ const AsyncStorage = {
       console.log({ "`Storage Util Error\nSet Item`": e });
     }
   },
-  // *
-  getItem: async (key) => {
+
+  /**
+   * @param {key} key
+   * @returns reading the localStorage item
+   */
+  getItem: async (key, fn = null) => {
     try {
       return await localStorage.getItem(key);
     } catch (e) {
       console.log({ "`Storage Util Error\nGet Item:`": e });
     }
   },
-  // *
-  removeItem: async (key) => {
+
+  /**
+   * @param {key} key
+   * @remove localstorage item
+   */
+  removeItem: async (key, fn = null) => {
     try {
       return await localStorage.removeItem(key);
     } catch (e) {
       console.log({ "`Storage Util Error.\nRemove Item:`": e });
     }
   },
-  // *
-  multiRemove: async (keys = []) => {
+
+  /**
+   * @remove all the localStorage items
+   */
+  clear: async () => {
     try {
-      return await localStorage.multiRemove(keys);
+      return await localStorage.clear();
     } catch (e) {
-      console.log({ "`Storage Util Error.\nMulti Remove Item:`": e });
-    }
-  },
-  // *
-  multiGet: async (keys = []) => {
-    try {
-      return await localStorage.multiGet(keys);
-    } catch (e) {
-      console.log({ "`Storage Util Error.Multi Get Item:`": e });
+      console.log({ "`Storage Util Error.\nRemove Item:`": e });
     }
   },
 };
