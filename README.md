@@ -14,13 +14,8 @@ Asynchronous usage for Window.localStorage.
 **Remove specific data from the localstorage**
 - AsyncStorage.removeItem()
 
-**Multi-remove data**
-- AsyncStorage.multiRemove()
-
-
-**Multi-get Data from the localstorage**
-- AsyncStorage.multiGet()
-
+**Remove all data**
+- AsyncStorage.clear()
 
 ## Implementation Example
 ```javascript
